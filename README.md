@@ -21,7 +21,7 @@ El nombre **filter-products** es para fines del ejemplo, puedes agregarle el nom
 Una vez este en ejecucion la funcion lambda, debemos verificar el funcionamiento de la misma, podemos usar postman para el ejemplo o por CMD
 ### Postman
 ```
-    POST > http://localhost:9000/2015-03-31/functions/function/invocations
+POST > http://localhost:9000/2015-03-31/functions/function/invocations
 ```
 en el body de la request debes pasar como parametro un precio
 ```
@@ -32,7 +32,7 @@ en el body de la request debes pasar como parametro un precio
 Response:
 Un listado con el nombre de los productos, que contienen un precio mayor al indicado en el body de la request.
 ```
-    {"statusCode":200,"body":["PLAY STATION 3","XBOX ONE","PLAY STATION 5","NINTENTO SWIFT"]}
+{"statusCode":200,"body":["PLAY STATION 3","XBOX ONE","PLAY STATION 5","NINTENTO SWIFT"]}
 ```
 ### CMD
 
