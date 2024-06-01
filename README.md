@@ -1,6 +1,6 @@
 # Lambda Function
 
-Instalar las dependencias necesarias
+Instalar dependencias:
 
 ```
 npm install
