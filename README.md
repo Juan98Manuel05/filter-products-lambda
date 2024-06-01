@@ -20,24 +20,29 @@ El nombre **filter-products** es para fines del ejemplo, puedes agregarle el nom
 
 Una vez este en ejecucion la funcion lambda, debemos verificar el funcionamiento de la misma, podemos usar postman para el ejemplo o por CMD
 ### Postman
-```
-POST > http://localhost:9000/2015-03-31/functions/function/invocations
-```
-en el body de la request debes pasar como parametro un precio
+
+Realizar una peticion de tipo post que debe llevar los siguientes parametros en el body de la request
 ```
 {
     "price": 10.000
 }
 ```
-Response:
-Un listado con el nombre de los productos, que contienen un precio mayor al indicado en el body de la request.
+Posteriormente ejecutar la peticion dando clic en el boton de **SEND**
 ```
-{"statusCode":200,"body":["PLAY STATION 3","XBOX ONE","PLAY STATION 5","NINTENTO SWIFT"]}
+POST > http://localhost:9000/2015-03-31/functions/function/invocations
 ```
+
+
 ### CMD
 
 Por cmd podemos ejecutar el siguiente comando:
 ```
-curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"price": 150}'
+curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"price": 10.000}'
 ```
+
+Response:
+```
+{"statusCode":200,"body":["PLAY STATION 3","XBOX ONE","PLAY STATION 5","NINTENTO SWIFT"]}
+```
+Debe obtener listado con el nombre de los productos, que contienen un precio mayor al indicado en el body de la request.
 
